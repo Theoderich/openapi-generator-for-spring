@@ -99,6 +99,8 @@
         <module>openapi-generator-for-spring-api</module>
         <module>openapi-generator-for-spring-ui</module>
         <module>openapi-generator-for-spring-starter</module>
+        <module>openapi-generator-for-spring-webmvc-reflection</module>
+        <module>openapi-generator-for-spring-maven-plugin</module>
     </modules>
 
     <dependencyManagement>
@@ -123,6 +125,12 @@
 
             <dependency>
                 <groupId>de.qaware.tools.openapi-generator-for-spring</groupId>
+                <artifactId>openapi-generator-for-spring-maven-plugin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>de.qaware.tools.openapi-generator-for-spring</groupId>
                 <artifactId>openapi-generator-for-spring-shaded</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -142,6 +150,12 @@
             <dependency>
                 <groupId>de.qaware.tools.openapi-generator-for-spring</groupId>
                 <artifactId>openapi-generator-for-spring-webmvc</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>de.qaware.tools.openapi-generator-for-spring</groupId>
+                <artifactId>openapi-generator-for-spring-webmvc-reflection</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
